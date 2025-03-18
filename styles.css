@@ -1,0 +1,95 @@
+/* 全体のスタイル */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* コンテナ */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* メインコンテンツエリア */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #d5d5d5;
+    transform: scale(1.05);
+}
+
+/* アクティブ状態 */
+.nav-btn.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* コンテンツエリア */
+.content-box {
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* 非表示クラス */
+.hidden {
+    display: none;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+ul {
+    padding-left: 25px; /* デフォルトより少し右に寄せる */
+    list-style-position: outside; /* 箇条書きを外側に */
+}
+
+/* li スタイル調整（必要なら） */
+li {
+    margin-bottom: 8px; /* 項目間の余白 */
+    line-height: 1.6; /* 行間を少し広めに */
+}
