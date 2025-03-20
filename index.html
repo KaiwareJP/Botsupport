@@ -31,6 +31,7 @@
             
             <button id="faqBtn" class="nav-btn">❓ FAQ</button>
             <button id="mensekiBtn" class="nav-btn">📚 免責事項</button>
+            <button id="updBtn" class="nav-btn">🔁 アップデート</button>
         </nav>
 
         <!-- コンテンツエリア -->
@@ -87,6 +88,12 @@
                     <li>このBotの機能を乱用したことに起因するトラブル</li>
                 </ul>
             </div>
+            <div id="upd" class="content-box hidden">
+                <h2>🔁 アップデート</h2>
+                <h3>アップデート情報</h3>
+                <p>2025/3/21 ver 1.0.1リリース(メンションのバグ修正)</p>
+                <p>2025/3/20 ver 1.0リリース(正式版提供開始)</p>
+            </div>
         </section>
 
         <!-- フッター -->
@@ -102,10 +109,12 @@
         const howtoBtn = document.getElementById('howtoBtn');
         const faqBtn = document.getElementById('faqBtn');
         const mensekiBtn = document.getElementById('mensekiBtn');
+        const updBtn = document.getElementById('updBtn');
         const policyContent = document.getElementById('policy');
         const howtoContent = document.getElementById('howto');
         const faqContent = document.getElementById('faq');
         const mensekiContent = document.getElementById('menseki');
+        const updContent = document.getElementById('updseki');
 
                 // ボタンのクリックイベント
                 function switchContent(btn, content) {
@@ -121,6 +130,7 @@
         howtoBtn.addEventListener('click', () => switchContent(howtoBtn, howtoContent));
         faqBtn.addEventListener('click', () => switchContent(faqBtn, faqContent));
         mensekiBtn.addEventListener('click', () => switchContent(mensekiBtn, mensekiContent));
+        updBtn.addEventListener('click', () => switchContent(updBtn, updContent));
 
     </script>
 </body>
